@@ -27,7 +27,6 @@ def dream(img, model, iterations, lr):
     img = torch.tensor(img, requires_grad=True)
     
     for i in range(iterations):
-        print(img.shape)
 
         model.zero_grad()
         out = model(img)
